@@ -1,3 +1,14 @@
+buildscript {
+    repositories {
+        maven { url "http://repo.spring.io/libs-release" }
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.6.RELEASE")
+    }
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
@@ -11,12 +22,17 @@ jar {
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
+    maven { url "http://repo.spring.io/libs-release" }
 }
+
 
 dependencies {
     compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
     compile 'org.mongeez:mongeez:0.9.4'
+    compile 'org.springframework.boot:spring-boot-starter-data-mongodb:1.2.5.RELEASE'
+    
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
 
