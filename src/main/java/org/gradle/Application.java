@@ -1,9 +1,5 @@
 package org.gradle;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.mongeez.Mongeez;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -13,7 +9,6 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.mongodb.config.EnableMongoAuditing;
 
 import com.mongodb.Mongo;
-import com.mongodb.MongoClient;
 
 @EnableAutoConfiguration
 @EnableMongoAuditing

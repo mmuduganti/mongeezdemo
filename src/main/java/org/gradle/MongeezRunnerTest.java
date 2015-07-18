@@ -8,7 +8,6 @@ import java.net.UnknownHostException;
 import org.mongeez.Mongeez;
 import org.springframework.core.io.ClassPathResource;
 
-import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 
 /**
